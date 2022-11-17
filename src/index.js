@@ -18,7 +18,7 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter basename={'/esowunmi2016'}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes >
           <Route path='/' element={<Signin />} />
           <Route path='/signin' element={<Signin />} />
