@@ -37,7 +37,7 @@ import { setUser } from "../../redux/user";
         setloading(true)
         fetch(
         //    'http://localhost:8080/login', 
-           'https://swe-backend.azurewebsites.net/', 
+           'https://swe-backend.azurewebsites.net/login', 
            {
                method:'POST',
                body: JSON.stringify(values),

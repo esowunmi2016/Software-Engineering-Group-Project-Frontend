@@ -1,7 +1,7 @@
 {
   "name": "swe_frontend",
   "version": "0.1.0",
-  "homepage": "https://esowunmi2016.github.io/Software-Engineering-Group-Project-Frontend/",
+  "homepage": "https://esowunmi2016.github.io/Software-Enginering-Group-Project-Frontend/",
   "private": false,
   "proxy": "http://localhost:8080",
   "dependencies": {
