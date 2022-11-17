@@ -8,24 +8,32 @@ import jwt_decode from "jwt-decode";
 import { setUser } from '../../redux/user';
 import Calendar from '../../components/calender';
 import Profile from './profile';
+import Payments from './payments';
+import { useNavigate } from 'react-router-dom';
 
 
 
 
 function Dashboard() {
 
+    const navigate = useNavigate();
+
     const dispatch = useDispatch();
-    const userData = useSelector(state => state.user.fname)
+    const userData = useSelector(state => state.user.fname);
 
     const [collapsed, setCollapsed] = useState(window.innerWidth >= 768 ? false:true);
-    const [nav, setNav] = useState(1)
-    const [schedule, setSchedule] = useState('')
-    const [profile, setProfile] = useState('none')
+    // const [nav, setNav] = useState(1);
+    const [schedule, setSchedule] = useState('');
+    const [profile, setProfile] = useState('none');
+    const [payments, setPayments] = useState('none');
+
+    const [paymentData, setPaymentData] = useState([])
 
 
     useEffect(() => {
 
         setUserState()
+        fetchPayments()
 
     })
 
@@ -33,6 +41,27 @@ function Dashboard() {
     const setUserState =()=>{
         var token = jwt_decode(localStorage.getItem('synergyToken'))
         dispatch(setUser(token.data))
+    }
+
+    const fetchPayments =()=>{
+        fetch(
+            'http://localhost:8080/payments/?id=3', 
+            //    'https://swe-backend.azurewebsites.net/login', 
+            {
+                headers:{
+                    'token':localStorage.getItem('synergyToken')
+                }
+            }
+        )
+        .then(res => res.json())
+        .then( res => {
+            if(res.name === 'TokenExpiredError'){
+                navigate('/')
+            }else{
+                // console.log(res)
+                setPaymentData(res)
+            }
+        })
     }
 
     const sider = [
@@ -58,11 +87,15 @@ function Dashboard() {
         if(x.key == '1'){
             setSchedule('')
             setProfile('none')
+            setPayments('none')
         }else if(x.key == '2'){
-            console.log('Pay Slip History Month')
-        }else if (x.key == '3'){
-            setProfile('')
             setSchedule('none')
+            setPayments('')
+            setProfile('none')
+        }else if (x.key == '3'){
+            setSchedule('none')
+            setPayments('none')
+            setProfile('')
         }
         window.innerWidth >= 576 ? setCollapsed(collapsed):setCollapsed('true')
         
@@ -135,6 +168,7 @@ function Dashboard() {
                         <div className="site-layout-background" style={{ padding: 24, minHeight: 360, height:'90vh' , background:'blue', borderRadius:'10px' }}>
                             <Calendar display={schedule} />
                             <Profile display={profile} />
+                            <Payments display={payments} data={paymentData} />
                         </div>
                         
                     <Footer 

@@ -25,7 +25,7 @@ export const userSlice = createSlice({
 
 
     setUser: (state, data) =>{
-      console.log(data)
+      // console.log(data)
       state.fname = data.payload.fname
       state.lname = data.payload.lname
       state.role = data.payload.role

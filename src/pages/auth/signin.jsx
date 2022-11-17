@@ -36,8 +36,8 @@ import { setUser } from "../../redux/user";
     const onFinish = (values) => {
         setloading(true)
         fetch(
-        //    'http://localhost:8080/login', 
-           'https://swe-backend.azurewebsites.net/login', 
+           'http://localhost:8080/login', 
+        //    'https://swe-backend.azurewebsites.net/login', 
            {
                method:'POST',
                body: JSON.stringify(values),
@@ -49,7 +49,7 @@ import { setUser } from "../../redux/user";
         .then(res => res.json())
         .then((res) => {
                 // console.log(escape(res))
-                console.log(res)
+                // console.log(res)
                 if(res.error == "wrongPassword"){
                     info('Wrong Password')
                 }else if(res.error == 'wrongEmail'){
