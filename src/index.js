@@ -18,7 +18,7 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter>
         <Routes >
           <Route path='/' element={<Signin />} />
           <Route path='/signin' element={<Signin />} />
