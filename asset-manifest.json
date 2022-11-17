@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Software-Engineering-Group-Project-Frontend/static/css/main.bcd51b30.css",
+    "main.js": "/Software-Engineering-Group-Project-Frontend/static/js/main.8bea2e2b.js",
+    "static/js/787.77c088b8.chunk.js": "/Software-Engineering-Group-Project-Frontend/static/js/787.77c088b8.chunk.js",
+    "index.html": "/Software-Engineering-Group-Project-Frontend/index.html",
+    "static/media/logo.svg": "/Software-Engineering-Group-Project-Frontend/static/media/logo.b2e5a01e505f739f1484b881277d5186.svg",
+    "static/media/default.less": "/Software-Engineering-Group-Project-Frontend/static/media/default.003f90b383291c3b90da.less",
+    "static/media/index.less": "/Software-Engineering-Group-Project-Frontend/static/media/index.512735b3dccd7d4b3088.less",
+    "main.bcd51b30.css.map": "/Software-Engineering-Group-Project-Frontend/static/css/main.bcd51b30.css.map",
+    "main.8bea2e2b.js.map": "/Software-Engineering-Group-Project-Frontend/static/js/main.8bea2e2b.js.map",
+    "787.77c088b8.chunk.js.map": "/Software-Engineering-Group-Project-Frontend/static/js/787.77c088b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bcd51b30.css",
+    "static/js/main.8bea2e2b.js"
+  ]
+}
