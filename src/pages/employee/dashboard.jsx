@@ -45,8 +45,9 @@ function Dashboard() {
 
     const fetchPayments =()=>{
         fetch(
-            'http://localhost:8080/payments/?id=3', 
-            //    'https://swe-backend.azurewebsites.net/login', 
+            // 'http://localhost:8080/payments/?id=3', 
+            //    `https://swe-backend.azurewebsites.net/payments/?id=${userData.}`, 
+               `https://swe-backend.azurewebsites.net/payments/?id=3`, 
             {
                 headers:{
                     'token':localStorage.getItem('synergyToken')
