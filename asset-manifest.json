@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Software-Enginering-Group-Project-Frontend/static/css/main.bcd51b30.css",
-    "main.js": "/Software-Enginering-Group-Project-Frontend/static/js/main.ccc7451f.js",
+    "main.js": "/Software-Enginering-Group-Project-Frontend/static/js/main.18a853b6.js",
     "static/js/787.77c088b8.chunk.js": "/Software-Enginering-Group-Project-Frontend/static/js/787.77c088b8.chunk.js",
     "index.html": "/Software-Enginering-Group-Project-Frontend/index.html",
     "static/media/logo.svg": "/Software-Enginering-Group-Project-Frontend/static/media/logo.b2e5a01e505f739f1484b881277d5186.svg",
     "static/media/default.less": "/Software-Enginering-Group-Project-Frontend/static/media/default.003f90b383291c3b90da.less",
     "static/media/index.less": "/Software-Enginering-Group-Project-Frontend/static/media/index.512735b3dccd7d4b3088.less",
     "main.bcd51b30.css.map": "/Software-Enginering-Group-Project-Frontend/static/css/main.bcd51b30.css.map",
-    "main.ccc7451f.js.map": "/Software-Enginering-Group-Project-Frontend/static/js/main.ccc7451f.js.map",
+    "main.18a853b6.js.map": "/Software-Enginering-Group-Project-Frontend/static/js/main.18a853b6.js.map",
     "787.77c088b8.chunk.js.map": "/Software-Enginering-Group-Project-Frontend/static/js/787.77c088b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bcd51b30.css",
-    "static/js/main.ccc7451f.js"
+    "static/js/main.18a853b6.js"
   ]
 }
