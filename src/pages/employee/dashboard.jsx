@@ -35,7 +35,7 @@ function Dashboard() {
         setUserState()
         fetchPayments()
 
-    })
+    }, [])
 
 
     const setUserState =()=>{
