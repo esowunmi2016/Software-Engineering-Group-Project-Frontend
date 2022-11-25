@@ -29,6 +29,7 @@ export const userSlice = createSlice({
       state.fname = data.payload.fname
       state.lname = data.payload.lname
       state.role = data.payload.role
+      state.address = data.payload.address
     }
   }
 })

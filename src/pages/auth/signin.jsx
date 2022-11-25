@@ -36,8 +36,8 @@ import { setUser } from "../../redux/user";
     const onFinish = (values) => {
         setloading(true)
         fetch(
-        //    'http://localhost:8080/login', 
-           'https://swe-backend.azurewebsites.net/login', 
+           'http://localhost:8080/login', 
+        //    'https://swe-backend-2.azurewebsites.net/login', 
            {
                method:'POST',
                body: JSON.stringify(values),
@@ -56,7 +56,7 @@ import { setUser } from "../../redux/user";
                     info('Email Not Found')
                 }else{
                     localStorage.setItem('synergyToken' , res.token)
-                    info(res.id)
+                    info(res.data.role)
                 }
             setloading(false)
         })

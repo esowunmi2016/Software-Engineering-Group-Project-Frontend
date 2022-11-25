@@ -31,10 +31,8 @@ function Dashboard() {
 
 
     useEffect(() => {
-
         setUserState()
         fetchPayments()
-
     }, [])
 
 
@@ -47,7 +45,7 @@ function Dashboard() {
         fetch(
             // 'http://localhost:8080/payments/?id=3', 
             //    `https://swe-backend.azurewebsites.net/payments/?id=${userData.}`, 
-               `https://swe-backend.azurewebsites.net/payments/?id=3`, 
+               `https://swe-backend-2.azurewebsites.net/payments/?id=3`, 
             {
                 headers:{
                     'token':localStorage.getItem('synergyToken')
